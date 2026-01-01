@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+python-multipart
+# Assuming torch, transformers, deepspeed, peft are already installed in the environment
