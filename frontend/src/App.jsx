@@ -3,9 +3,9 @@ import axios from 'axios';
 import ImageUpload from './components/ImageUpload';
 import ChatInterface from './components/ChatInterface';
 
-// Configure Axios
+// Configure Axios - uses Vite proxy to backend
 const api = axios.create({
-  baseURL: 'http://localhost:8000', // Adjust if backend is on different port/host
+  baseURL: '/api',
 });
 
 function App() {
@@ -68,7 +68,7 @@ function App() {
   return (
     <div className="container">
       <header className="app-header">
-        <h1 className="app-title">Waylens Brain</h1>
+        <h1 className="app-title">Visual Understanding Demo</h1>
         <p className="app-subtitle">Advanced Visual Language Model Playground</p>
       </header>
 

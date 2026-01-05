@@ -23,7 +23,7 @@ async def lifespan(app: FastAPI):
     yield
     logger.info("Shutting down VLM Backend...")
 
-app = FastAPI(title="Waylens Brain", lifespan=lifespan)
+app = FastAPI(title="Visual Understanding Demo", lifespan=lifespan)
 
 # CORS (Allowing all for dev)
 app.add_middleware(
