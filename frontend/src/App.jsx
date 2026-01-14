@@ -6,6 +6,7 @@ import ChatInterface from './components/ChatInterface';
 // Configure Axios - uses Vite proxy to backend
 const api = axios.create({
   baseURL: '/api',
+  timeout: 300000, // 5 minutes for long 16k context generation
 });
 
 function App() {
