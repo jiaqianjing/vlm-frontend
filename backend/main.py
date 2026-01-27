@@ -38,9 +38,9 @@ STUDENT_MODEL = os.getenv("STUDENT_MODEL", "OpenGVLab/InternVL2-1B")
 TEACHER_URL = os.getenv("TEACHER_URL", "http://localhost:8002/inference")  # local teacher
 
 # Dataset Storage
-DATASET_DIR = os.path.join(os.path.dirname(__file__), "datasets")
-IMG_DIR = os.path.join(DATASET_DIR, "images")
-LOG_DIR = os.path.join(DATASET_DIR, "logs")
+DATASET_BASE_DIR = os.getenv("DATASET_BASE_DIR", "/fsx/datasets/")
+IMG_DIR = os.path.join(DATASET_BASE_DIR, "images")
+LOG_DIR = os.path.join(DATASET_BASE_DIR, "logs")
 SFT_FILE = os.path.join(LOG_DIR, "sft_dataset.jsonl")
 DPO_FILE = os.path.join(LOG_DIR, "dpo_dataset.jsonl")
 

@@ -9,6 +9,7 @@ Group=ec2-user
 WorkingDirectory=/home/ec2-user/fsx/vlm-frontend/backend
 
 # Environment Setup
+Environment="DATASET_BASE_DIR=/home/ec2-user/fsx/datasets/"
 Environment="PATH=/home/ec2-user/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"
 # Gateway doesn't need GPUs
 # Environment="CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7" 
