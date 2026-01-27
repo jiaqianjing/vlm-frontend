@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function ComparisonPage() {
     const [file, setFile] = useState(null)
     const [preview, setPreview] = useState(null)
-    const [prompt, setPrompt] = useState("Describe this scene in detail, focusing on road conditions and traffic.")
+    const [prompt, setPrompt] = useState("Describe the key information in JSON format")
     const [loading, setLoading] = useState(false) // General loading state (for button)
 
     // Independent states
